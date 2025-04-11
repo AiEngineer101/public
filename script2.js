@@ -4,7 +4,7 @@
   const config = {
     title: "WordPressss Whisper",
     subtitle: "Gots a question? Ask away!",
-    primaryColor: "#4f46e5",
+    primaryColor: "#ffffff",
     initialMessage: "His there! 👋 How can I help you today?",
     position: "bottom-right", // "bottom-right" or "bottom-left"
     webhookUrl: "https://aisolv.app.n8n.cloud/webhook/6cf02e8f-eda1-4eaa-b931-d7e861eeb82f" // New configuration option for webhook URL
