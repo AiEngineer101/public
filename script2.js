@@ -1,4 +1,5 @@
 (function() {
+  console.log("sending message")
   // Configuration (can be customized when embedding)
   const config = {
     title: "WordPress Whisper",
