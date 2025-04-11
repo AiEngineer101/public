@@ -3,7 +3,7 @@
   // Configuration (can be customized when embedding)
   const config = {
     title: "WordPress Whisper",
-    subtitle: "Got questions? Ask away!",
+    subtitle: "Gots question? Ask away!",
     primaryColor: "#4f46e5",
     initialMessage: "Hi there! 👋 How can I help you today?",
     position: "bottom-right", // "bottom-right" or "bottom-left"
