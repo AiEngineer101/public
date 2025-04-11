@@ -191,6 +191,8 @@
       const typingIndicator = createTypingIndicator();
       messagesContainer.appendChild(typingIndicator);
       messagesContainer.scrollTop = messagesContainer.scrollHeight;
+
+      console.log("sending message")
       
       // Simulate bot response
       setTimeout(() => {
