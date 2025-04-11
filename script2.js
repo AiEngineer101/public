@@ -352,8 +352,11 @@
 
   // Send message to webhook
   function sendToWebhook(messageData) {
-    if (!config.webhookUrl) return;
-    
+    console.log("sending webhook")
+    if (!config.webhookUrl) {
+      console.log("not config")
+      return;
+    }
     try {
       fetch(config.webhookUrl, {
         method: "POST",
