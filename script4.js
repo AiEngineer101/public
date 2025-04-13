@@ -96,8 +96,7 @@
     header.style.display = 'flex';
     header.style.alignItems = 'center';
     header.style.justifyContent = 'space-between';
-
-    header.style.fontFamily = "'Segoe UI', 'Roboto', sans-serif";
+    header.style.fontFamily = 'Segoe UI';
     
     const headerTextDiv = document.createElement('div');
     
@@ -106,12 +105,16 @@
     headerTitle.style.margin = '0';
     headerTitle.style.fontSize = '16px';
     headerTitle.style.fontWeight = '600';
+    headerTitle.style.fontFamily = 'Segoe UI';
+    headerTitle.style.color = 'white';
     
     const headerSubtitle = document.createElement('p');
     headerSubtitle.textContent = config.subtitle;
     headerSubtitle.style.margin = '4px 0 0';
     headerSubtitle.style.fontSize = '12px';
     headerSubtitle.style.opacity = '0.9';
+    headerSubtitle.style.fontFamily = 'Segoe UI';
+    headerSubtitle.style.color = 'white';
     
     headerTextDiv.appendChild(headerTitle);
     headerTextDiv.appendChild(headerSubtitle);
