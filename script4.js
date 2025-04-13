@@ -11,7 +11,7 @@
   // Configuration (can be customized when embedding)
   const config = {
     title: "WordPressss Whisper",
-    subtitle: "Gots a question? Ask away!",
+    subtitle: "Got a question? Ask away!",
     primaryColor: "#e83e2f",
     initialMessage: "His there! 👋 How can I help you today?",
     position: "bottom-right", // "bottom-right" or "bottom-left"
