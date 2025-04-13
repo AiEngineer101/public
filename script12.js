@@ -259,7 +259,7 @@
     
     const messageBubble = document.createElement('div');
     // messageBubble.textContent = text;
-    const dataHTML = marked.parse(text);
+    let dataHTML = marked.parse(text);
     // If it's just a single <p>...</p>, strip the wrapper
     console.log("datahtml", dataHTML)
     dataHTML = dataHTML.trim()
