@@ -270,7 +270,7 @@
     console.log("datahtml", dataHTML)
     messageBubble.innerHTML = dataHTML;
     console.log("bubble inner 1", messageBubble.innerHTML)
-    messageBubble.style.padding = '10px 14px';
+    messageBubble.style.padding = '8px 12px';
     messageBubble.style.fontSize = '14px';
     messageBubble.style.borderRadius = '16px';
     messageBubble.style.maxWidth = '100%';
