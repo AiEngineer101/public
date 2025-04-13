@@ -261,6 +261,7 @@
     // messageBubble.textContent = text;
     const dataHTML = marked.parse(text);
     // If it's just a single <p>...</p>, strip the wrapper
+    console.log("datahtml", dataHTML)
     if (dataHTML.startsWith('<p>') && dataHTML.endsWith('</p>')) {
       dataHTML = dataHTML.slice(3, -4);
     }
