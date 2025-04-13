@@ -96,6 +96,8 @@
     header.style.display = 'flex';
     header.style.alignItems = 'center';
     header.style.justifyContent = 'space-between';
+
+    header.style.fontFamily = "'Segoe UI', 'Roboto', sans-serif";
     
     const headerTextDiv = document.createElement('div');
     
