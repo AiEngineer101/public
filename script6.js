@@ -259,7 +259,12 @@
     
     const messageBubble = document.createElement('div');
     messageBubble.textContent = text;
-    messageBubble.innerHTML = marked.parse(text);
+    const dataHTML = marked.parse(text);
+    // If it's just a single <p>...</p>, strip the wrapper
+    if (html.startsWith('<p>') && html.endsWith('</p>')) {
+      html = html.slice(3, -4);
+    }
+    messageBubble.innerHTML = dataHTML;
     messageBubble.style.padding = '10px 14px';
     messageBubble.style.fontSize = '14px';
     messageBubble.style.padding = '6px 10px';
