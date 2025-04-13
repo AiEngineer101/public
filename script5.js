@@ -261,6 +261,8 @@
     messageBubble.textContent = text;
     messageBubble.innerHTML = marked.parse(text);
     messageBubble.style.padding = '10px 14px';
+    messageBubble.style.fontSize = '14px';
+    messageBubble.style.padding = '6px 10px';
     messageBubble.style.borderRadius = '16px';
     messageBubble.style.maxWidth = '100%';
     messageBubble.style.wordBreak = 'break-word';
