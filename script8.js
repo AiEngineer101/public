@@ -258,29 +258,34 @@
     messageContainer.style.alignSelf = isUser ? 'flex-end' : 'flex-start';
     
     const messageBubble = document.createElement('div');
-    messageBubble.textContent = text;
+    // messageBubble.textContent = text;
     const dataHTML = marked.parse(text);
     // If it's just a single <p>...</p>, strip the wrapper
     if (dataHTML.startsWith('<p>') && dataHTML.endsWith('</p>')) {
       dataHTML = dataHTML.slice(3, -4);
     }
+    console.log("datahtml", dataHTML)
     messageBubble.innerHTML = dataHTML;
+    console.log("bubble inner 1", messageBubble.innerHTML)
     messageBubble.style.padding = '10px 14px';
     messageBubble.style.fontSize = '14px';
     messageBubble.style.padding = '6px 10px';
     messageBubble.style.borderRadius = '16px';
     messageBubble.style.maxWidth = '100%';
     messageBubble.style.wordBreak = 'break-word';
+    console.log("bubble inner 2", messageBubble.innerHTML)
     
     if (isUser) {
       messageBubble.style.backgroundColor = config.primaryColor;
       messageBubble.style.color = 'white';
       messageBubble.style.borderBottomRightRadius = '4px';
+      console.log("bubble inner 3", messageBubble.innerHTML)
     } else {
       messageBubble.style.backgroundColor = 'white';
       messageBubble.style.color = '#1f2937';
       messageBubble.style.borderBottomLeftRadius = '4px';
       messageBubble.style.boxShadow = '0 1px 2px rgba(0, 0, 0, 0.1)';
+      console.log("bubble inner 4", messageBubble.innerHTML)
     }
     
     const timeElement = document.createElement('span');
@@ -291,6 +296,7 @@
     timeElement.style.marginTop = '4px';
     
     messageContainer.appendChild(messageBubble);
+    console.log("bubble inner final", messageBubble.innerHTML)
     messageContainer.appendChild(timeElement);
     
     return messageContainer;
