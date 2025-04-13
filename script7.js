@@ -261,8 +261,8 @@
     messageBubble.textContent = text;
     const dataHTML = marked.parse(text);
     // If it's just a single <p>...</p>, strip the wrapper
-    if (html.startsWith('<p>') && html.endsWith('</p>')) {
-      html = html.slice(3, -4);
+    if (dataHTML.startsWith('<p>') && dataHTML.endsWith('</p>')) {
+      dataHTML = dataHTML.slice(3, -4);
     }
     messageBubble.innerHTML = dataHTML;
     messageBubble.style.padding = '10px 14px';
