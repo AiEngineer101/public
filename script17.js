@@ -308,10 +308,10 @@
     console.log("bubble inner final", messageBubble.innerHTML)
     messageContainer.appendChild(timeElement);
 
-    const h3Elements = messageBubble.getElementsByTagName('h3');
-    for (const h3 of h3Elements) {
-      h3.style.fontSize = '16px';
-      h3.style.fontFamily = 'Segoe UI';
+    const h2Elements = messageBubble.getElementsByTagName('h2');
+    for (const h2 of h2Elements) {
+      h2.style.fontSize = '16px';
+      h2.style.fontFamily = 'Segoe UI';
     }
 
     return messageContainer;
