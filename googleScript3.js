@@ -434,7 +434,7 @@
   // Generate bot response
   async function generateBotResponse(userMessage) {
     try {
-        const eventSource = new EventSource(`/stream?prompt=${encodeURIComponent(userMessage)}`);
+        const eventSource = new EventSource(`https://westrom-agent-991313418129.us-central1.run.app/stream?prompt=${encodeURIComponent(userMessage)}`);
         let responseText = '';
         
         eventSource.onmessage = function(event) {
